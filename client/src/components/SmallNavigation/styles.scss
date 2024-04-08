@@ -1,0 +1,82 @@
+.nav {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+
+  nav {
+    ul {
+      a {
+        text-decoration: none;
+      }
+
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding-bottom: 1rem;
+        width: 100%;
+
+        .spanbox {
+          display: flex;
+          align-items: center;
+          border-radius: 5px;
+          padding: 0.75rem;
+          padding-inline: 1rem;
+          transition: 0.2s ease-in-out;
+          width: 100%;
+          opacity: 0.5;
+          cursor: pointer;
+
+          .filterclass {
+            filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+              brightness(104%) contrast(101%);
+          }
+
+          .textspan {
+            font-family: "Source Sans Pro Semi-Bold", sans-serif;
+            color: #1f2227;
+            font-size: 1.05em;
+            margin: 0 0.5rem;
+          }
+
+          .exitImg {
+            width: 1rem;
+            height: 1rem;
+            opacity: 0.5;
+          }
+        }
+
+        .active {
+          opacity: 1;
+          box-shadow: 0px 20px 40px 0 rgb(62 52 32 / 9%);
+          background-color: white;
+
+          .textspan {
+            color: lighten(#013220, 10%);
+          }
+        }
+
+        &:hover {
+          .spanbox {
+            opacity: 1;
+            box-shadow: 0px 20px 40px 0 rgb(62 52 32 / 9%);
+            background-color: white;
+            transition: 0.5s ease-in-out;
+
+            .textspan {
+              color: lighten(#013220, 10%);
+              transition: color 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    display: none;
+  }
+}

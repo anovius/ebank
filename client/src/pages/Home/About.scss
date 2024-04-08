@@ -1,0 +1,441 @@
+.About {
+    background-color: #fff;
+    padding-top: 3rem;
+
+    .Topinner {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 1.5rem;
+            line-height: 35px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-top: 1rem;
+            line-height: 25px;
+            font-size: 1rem;
+            opacity: .8;
+            text-align: center;
+        }
+
+        .image-building {
+            width: 100%;
+            height: 100%;
+            margin-top: 1rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        ul {
+            margin: 2rem auto;
+            width: fit-content;
+
+            li {
+                text-align: left;
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    .backed,
+    .partners {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 1.5rem;
+            line-height: 35px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .Company,
+        .partner {
+            width: 100%;
+            display: grid;
+            place-items: center;
+            grid-template-rows: 1fr;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+
+            .companyCard,
+            .partnerCard {
+                cursor: pointer;
+                border-radius: 0.5rem;
+                height: 8rem;
+                width: 100%;
+                border: 1px solid transparent;
+                background-color: #fff;
+                box-shadow: 0 7px 29px 0 rgb(100 100 111 / 20%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    box-shadow: none;
+                    border: 1px solid rgba(0, 0, 0, .1);
+                }
+
+                img {
+                    max-width: 60%;
+                    max-height: 5rem;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    .whyChoose {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-size: 1.5rem;
+            line-height: 35px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .chooseReason {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            place-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+            grid-template-rows: 1fr;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+
+            .chooseCard {
+                flex-direction: column;
+                padding: 1.5rem 1rem;
+                height: 10rem;
+                border-radius: 1rem;
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0 7px 29px 0 rgb(100 100 111 / 20%);
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                position: relative;
+
+                img {
+                    width: 4.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                .title {
+                    width: 90%;
+                    top: 65%;
+                    position: absolute;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: #013220;
+                    line-height: 25px;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+
+    .Teams {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        .teamMember {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            place-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+            grid-template-rows: 1fr;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+
+            .teamCard {
+                .teamImg {
+                    border: 5px solid #fff;
+                    box-shadow: inset 0 1px 1px 0 rgb(255 255 255 / 10%), 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%);
+                    width: 80%;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                    width: 200px;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        border-radius: 50%;
+
+                    }
+                }
+
+                .teamName {
+                    margin: 0.5rem 0;
+                    font-size: 1.2rem;
+                    color: #013220;
+                    font-weight: 700;
+                }
+
+                .teamRank {
+                    font-size: 1.3rem;
+                    line-height: 28px;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            line-height: 35px;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+            line-height: 25px;
+            font-size: 1rem;
+            opacity: .8;
+
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .About {
+        .Topinner {
+            h2 {
+                font-size: 2rem;
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .image-building {
+                width: 80%;
+            }
+
+            ul {
+                li {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .backed,
+        .partners {
+            h2 {
+                font-size: 2rem;
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .whyChoose {
+            h2 {
+                font-size: 2rem;
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .chooseReason {
+                .chooseCard {
+                    .title {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        .Teams {
+            h2 {
+                font-size: 2rem;
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .About {
+        .Topinner {
+            width: 80%;
+
+            h2 {
+                font-size: 3rem;
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                width: 80%;
+            }
+
+            .image-building {
+                width: 100%;
+            }
+        }
+
+        .backed,
+        .partners {
+            h2 {
+                font-size: 3rem;
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .whyChoose {
+            h2 {
+                font-size: 3rem;
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .Teams {
+            h2 {
+                font-size: 3rem;
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .About {
+
+        .backed,
+        .partners {
+            width: 70%;
+
+            .Company,
+            .partner {
+                grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+            }
+        }
+
+        .whyChoose {
+            width: 50%;
+
+            .chooseReason {
+                grid-column-gap: 2em;
+                grid-row-gap: 2em;
+                -ms-grid-columns: minmax(14em, 1fr) [auto-fit];
+                grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+            }
+        }
+
+        .Teams {
+            .teamMember {
+                grid-column-gap: 2em;
+                grid-row-gap: 2em;
+                grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .About {
+        .Topinner {
+            width: 70%;
+
+            .image-building {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .About {
+        .Topinner {
+            p {
+                font-size: 1.3rem;
+                line-height: 28px;
+            }
+
+            ul {
+                li {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .backed,
+        .partners {
+            width: 50%;
+
+            .Company,
+            .partner {
+                grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+            }
+        }
+
+        .whyChoose {
+            width: 40%;
+
+            .chooseReason {
+                grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+
+                .chooseCard {
+                    height: 13rem;
+
+                    img {
+                        width: 5rem;
+                    }
+
+                    .title {
+                        font-size: 1.3rem;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+
+        .Teams {
+            width: 40%;
+
+            p {
+                font-size: 1.3rem;
+                line-height: 28px;
+            }
+        }
+    }
+}

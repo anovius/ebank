@@ -1,0 +1,158 @@
+.select {
+  display: none;
+  user-select: none;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 20%;
+  flex-direction: column;
+  align-items: left;
+  position: relative;
+  z-index: 1;
+
+  p {
+    font-size: 0.7rem;
+    color: darkgreen;
+    font-weight: 600;
+    margin-left: auto;
+    margin-top: 0.3rem;
+  }
+
+  h4 {
+    font-family: "Source Sans Pro Regular", sans-serif;
+    font-weight: 600 !important;
+    font-size: 1em;
+    margin-bottom: 8px;
+    opacity: 0.8;
+  }
+
+  .opencontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .absolutecontainer {
+      z-index: 5;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      a {
+        text-decoration: none;
+        color: black;
+
+        .assetcontainer {
+          border-top: none !important;
+        }
+      }
+
+      .assetcontainer {
+        background-color: white;
+        border-radius: 0;
+        border: 0;
+        border-left: 1px solid rgba(0, 0, 0, 0.5);
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          cursor: pointer;
+          background-color: whitesmoke;
+        }
+      }
+
+      .assetcontainer:first-child {
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+      }
+
+      .assetcontainer:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      }
+
+      .active {
+        background-color: green;
+        color: white;
+
+        &:hover {
+          cursor: pointer;
+          background-color: green;
+        }
+      }
+    }
+  }
+
+  .assetcontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-inline: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      cursor: pointer;
+      background-color: whitesmoke;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      .imgbox {
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .infotip {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0.5rem;
+        width: 15rem;
+        height: 3.5rem;
+        background-color: white;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+        top: 110%;
+        right: 0;
+        font-family: "Source Sans Pro Regular", sans-serif;
+        font-size: 0.9em;
+        border-radius: 5px;
+      }
+
+      .imgbox:hover ~ .infotip {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.25s;
+      }
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      span {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+          margin-bottom: 0;
+          font-family: "Source Sans Pro Regular", sans-serif;
+          font-weight: lighter !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .select {
+    display: flex;
+  }
+}

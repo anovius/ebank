@@ -1,0 +1,389 @@
+.mobile {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 5rem;
+
+  .leftside {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    padding-inline: 0;
+    padding-bottom: 0;
+
+    .earnings {
+      width: 100%;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+
+      .earnbox {
+        width: 32%;
+        height: 5rem;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h6 {
+          font-family: "Source Sans Pro Regular", sans-serif;
+          font-weight: normal !important;
+          margin-bottom: 0.5rem;
+        }
+
+        h4 {
+          font-family: "Source Sans Pro Regular", sans-serif;
+          color: #101010;
+        }
+      }
+    }
+
+    .othercoins {
+      width: 100%;
+    }
+
+    .ebct {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 1rem;
+      background-color: white;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      width: 100%;
+
+      .content {
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.25s ease-in-out;
+      }
+
+      .height {
+        height: 255px;
+        transition: height 0.25s ease-in-out;
+      }
+
+      .buttonBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+
+        button {
+          outline: none;
+          border: 1px solid green;
+          background-color: transparent;
+          padding: 0.5rem;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 47.5%;
+
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Source Sans Pro Semi-Bold", sans-serif;
+
+            img {
+              margin-right: 5px;
+            }
+          }
+
+          &:hover {
+            background-color: darkgreen;
+
+            span {
+              color: white;
+              img {
+                filter: invert(100%) sepia(100%) saturate(38%)
+                  hue-rotate(321deg) brightness(110%) contrast(110%);
+              }
+            }
+
+            transition: background-color 0.2s;
+          }
+        }
+      }
+
+      .title {
+        outline: none;
+        border: none;
+        padding: 1.25rem;
+        background: transparent;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        .lefttitle,
+        .righttitle {
+          display: flex;
+          align-items: center;
+
+          .text,
+          .menuicon {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+
+            h1 {
+              font-family: "Source Sans Pro Semi-Bold", sans-serif;
+              font-weight: bolder !important;
+              font-size: 1.25rem;
+            }
+
+            h2 {
+              font-family: "Source Sans Pro Regular", sans-serif;
+              font-size: 1rem;
+            }
+          }
+
+          .menuicon {
+            padding-left: 1rem;
+          }
+
+          .notvisible {
+            visibility: hidden;
+          }
+        }
+
+        .titleimg {
+          margin-right: 5px;
+        }
+
+        h2 {
+          font-family: "Source Sans Pro Semi-Bold", sans-serif;
+          font-weight: normal !important;
+        }
+
+        h4 {
+          font-family: "Source Sans Pro Regular", sans-serif;
+          font-weight: lighter !important;
+        }
+      }
+    }
+  }
+
+  .rightside {
+    width: 100%;
+    padding: 1rem;
+    padding-inline: 0;
+
+    .carouselandchartwrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .carousel {
+      order: 2;
+      height: 9rem;
+      border-radius: 5px;
+      margin-bottom: 0.8rem;
+    }
+
+    .chart {
+      order: 1;
+      height: 6rem;
+      background-color: white;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      padding: 0.25rem;
+      padding-inline: 0.75rem;
+      display: flex;
+      align-items: center;
+
+      span {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .top {
+          width: 100%;
+          height: 40%;
+          display: flex;
+          align-items: center;
+        }
+
+        .bottom {
+          width: 100%;
+          height: 60%;
+          display: flex;
+          flex-direction: column;
+
+          select {
+            background: transparent;
+            outline: none;
+            border: none;
+          }
+        }
+
+        h3 {
+          font-family: "Source Sans Pro Regular", sans-serif;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .recentactivity {
+      background-color: white;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      height: 23rem;
+
+      h3 {
+        font-family: "Source Sans Pro Regular", sans-serif;
+        font-weight: normal !important;
+        font-size: 0.95em;
+        padding: 1rem;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+        border-spacing: 0;
+
+        th {
+          padding: 0.4rem;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          font-family: "Source Sans Pro Regular", sans-serif;
+          font-weight: lighter !important;
+          font-size: 0.8em;
+          color: #6d6d6d;
+
+          .thBox {
+            user-select: none;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        th:not(:first-child) {
+          text-align: center;
+        }
+
+        th:first-child {
+          padding-left: 0.5rem;
+          text-align: start;
+        }
+
+        th:last-child {
+          text-align: end;
+          padding-right: 0.5rem;
+        }
+
+        td {
+          padding: 0.9rem;
+          padding-inline: 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          font-size: 0.9em;
+        }
+
+        td:first-child {
+          font-family: "Source Sans Pro Semi-Bold", sans-serif;
+          padding-left: 0.5rem;
+
+          span {
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-right: 8px;
+            }
+          }
+        }
+
+        td:not(:first-child) {
+          text-align: center;
+        }
+
+        td:last-child {
+          text-align: end;
+          padding-right: 0.5rem;
+          width: 20%;
+        }
+
+        .notransactions {
+          text-align: center !important;
+          padding: 2rem;
+          padding-inline: 0 !important;
+          border: none;
+          height: 100%;
+          color: gray;
+          font-family: "Source Sans Pro Regular", sans-serif !important;
+          font-weight: normal !important;
+        }
+      }
+
+      .viewtransactions {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-top: 1rem;
+        a {
+          width: 70%;
+          text-decoration: none;
+          text-align: center;
+          font-size: 0.9em;
+          outline: none;
+          border: none;
+          background-color: transparent;
+          border: 1px solid green;
+          border-radius: 5px;
+          font-family: "Source Sans Pro Regular", sans-serif;
+          font-weight: normal !important;
+          color: black;
+          padding: 0.5rem;
+
+          &:hover {
+            cursor: pointer;
+            background-color: green;
+            color: white;
+            transition: background-color 0.25s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .mobile {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .earnings {
+    flex-direction: column;
+
+    .earnbox {
+      width: 100% !important;
+      height: 4rem !important;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .mobile .rightside .recentactivity table td {
+    font-size: 0.75em !important;
+  }
+}

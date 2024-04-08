@@ -1,0 +1,25 @@
+.custom-tooltip {
+  padding: 0.75rem;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+
+  .date {
+    font-family: "Source Sans Pro Regular", sans-serif;
+    font-weight: lighter !important;
+    font-size: 0.7em;
+    margin-bottom: 5px;
+  }
+
+  .desc {
+    font-family: "Source Sans Pro Regular", sans-serif;
+    font-weight: lighter !important;
+    font-size: 0.8em;
+    color: gray;
+  }
+
+  .label {
+    font-family: "Source Sans Pro Semi-Bold", sans-serif;
+    color: black;
+  }
+}

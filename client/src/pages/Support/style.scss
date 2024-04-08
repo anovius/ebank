@@ -1,0 +1,117 @@
+.support{
+    width: calc(100%);
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+}
+
+table {
+        margin-top: 20px;
+        width: 100%;
+        border-spacing: 0;
+        position: relative;
+
+        .notransactions {
+          position: absolute;
+          left: 50%;
+          top: 200%;
+          transform: translateX(-50%);
+          font-size: 1.2rem;
+        }
+
+        i{
+            cursor: pointer;
+        }
+
+        th {
+          padding: 0.4rem;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          font-family: "Source Sans Pro Regular", sans-serif;
+          font-weight: lighter !important;
+          font-size: 0.8em;
+          color: #6d6d6d;
+
+          .thBox {
+            user-select: none;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        th:not(:first-child) {
+          text-align: center;
+        }
+
+        th:first-child {
+          padding-left: 0.5rem;
+          text-align: start;
+        }
+
+        th:last-child {
+          text-align: end;
+          padding-right: 0.5rem;
+        }
+
+        td {
+          padding: 0.9rem;
+          padding-inline: 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          font-size: 0.9em;
+        }
+
+        td:first-child {
+          font-family: "Source Sans Pro Semi-Bold", sans-serif;
+          padding-left: 0.5rem;
+
+          span {
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-right: 8px;
+            }
+          }
+        }
+
+        td:not(:first-child) {
+          text-align: center;
+        }
+
+        td:last-child {
+          text-align: end;
+          padding-right: 0.5rem;
+          width: 20%;
+        }
+
+        .notransactions {
+          text-align: center !important;
+          padding: 2rem;
+          padding-inline: 0 !important;
+          border: none;
+          height: 100%;
+          color: gray;
+          font-family: "Source Sans Pro Regular", sans-serif !important;
+          font-weight: normal !important;
+        }
+      }
+      .text-right{
+          text-align: right;
+          margin: 12px 0;
+      }
+
+.newBtn{
+    margin-top: 10px;
+    width: 90px;
+    height: 35px;
+    border: none;
+    background-color: #013220;
+    margin-right: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}

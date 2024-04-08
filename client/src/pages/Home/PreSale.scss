@@ -1,0 +1,232 @@
+.PreSale{
+    .main{
+        background: rgb(241, 247, 253);
+        padding-top: 100px;
+        color: rgb(91, 102, 124);
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        padding-bottom: 60px;
+        overflow: hidden;
+        .container{
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            .preRow{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+                padding-top: 35px;
+                width: 100%;
+                .content{
+                    margin-top: 3rem;
+                    flex: 0 0 58.333333%;
+                    max-width: 58.333333%;
+                    position: relative;
+                    width: 100%;
+                    min-height: 1px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    h1{
+                        font-size: 68px;
+                        font-family: 'Roboto', sans-serif;
+                        color: rgb(45, 50, 59);
+                        font-weight: 700;
+                    }
+                    h2{
+                        font-size: 32px;
+                        font-family: 'Roboto', sans-serif;
+                        color: rgb(91, 102, 124);
+                        margin-bottom: 30px;
+                    }
+                    p{
+                        font-family: 'Roboto', sans-serif;
+                        color: rgb(91, 102, 124);
+                        font-size: 16px;
+                        line-height: 28px;
+                        font-weight: 500;
+                    }
+                    .btns{
+                        margin: 3rem 0;
+                        display: flex;
+                        button:first-child{
+                            margin-right: 20px;
+                        }
+                        button{
+                            background: #013220;
+                            color: #fff;
+                            width: auto;
+                            text-align: center;
+                            /* font-family: 'Poppins', sans-serif; */
+                            /* letter-spacing: 0.2em; */
+                            border-radius: 6px;
+                            /* transform: perspective(500px) rotateY(-15deg); */
+                            /* text-shadow: 6px 3px 2px rgb(0 0 0 / 20%); */
+                            box-shadow: 2px 0 0 5px rgb(255 255 255 / 38%);
+                            transition: 0.5s;
+                            position: relative;
+                            overflow: hidden;
+                            padding: 15px 40px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            &:hover{
+                                box-shadow: rgb(0 123 255 / 20%) 0px 6px 6px, rgb(0 125 255 / 25%) 0px 8px 10px;
+                            }
+                        }
+                    }
+                }
+                .timer{
+                    flex: 0 0 41.666667%;
+                    max-width: 41.666667%;
+                    position: relative;
+                    width: 100%;
+                    min-height: 1px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    text-align: center;
+                    width: 100%;
+                    float: right;
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                    padding: 30px;
+                    bottom: 0px;
+                    display: block;
+                    border-radius: 15px;
+                    /* border: 2px solid #b0b0b0; */
+                    backdrop-filter: blur(2px);
+                    background: rgb(251, 252, 255) none repeat scroll 0% 0%;
+                    h3{
+                        font-size: 32px;
+                        margin-bottom: 25px;
+                        color: rgb(45, 50, 59);
+                    }
+                    ul{
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        li{
+                            position: relative;
+                            &::before, &::after{
+                                content: "";
+                                background: #ddd;
+                                border-radius: 50%;
+                                width: 6px;
+                                height: 6px;
+                                display: inline-block;
+                                position: absolute;
+                                right: -18px;
+                            }
+                            &::before{
+                                top: 32px;
+                            }
+                            &::after{
+                                top: 45px;
+                            }
+                            .dashbox{
+                                border: 2px dashed rgb(91, 102, 124);
+                                display: block;
+                                font-size: 36px;
+                                font-weight: 700;
+                                color: rgb(45, 50, 59);
+                                font-family: 'Roboto', sans-serif;
+                                border-radius: 4px;
+                                line-height: 36px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                width: 85px;
+                                height: 85px;
+                                .value{
+
+                                }
+                                .label{
+                                    font-family: 'Roboto', sans-serif;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: rgb(91, 102, 124);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: 576px){
+    .PreSale{
+        .main{
+            .container {
+                max-width: 540px;
+            }
+            
+        }
+    }
+    
+}
+
+
+@media (min-width: 768px){
+    .PreSale{
+        .main{
+            .container {
+                max-width: 720px;
+            }
+            
+        }
+    }
+
+}
+
+@media (min-width: 992px){
+    .PreSale{
+        .main{
+            .container {
+                max-width: 960px;
+            }
+            
+        }
+    }
+
+}
+
+@media (min-width: 1200px){
+    .PreSale{
+        .main{
+            .container {
+                max-width: 1140px;
+            }
+            
+        }
+    }
+
+}
+
+@media (min-width: 1200px){
+    .PreSale{
+        .main{
+            .container {
+                max-width: 1200px;
+            }
+
+        }
+    }
+
+}

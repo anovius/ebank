@@ -1,0 +1,189 @@
+.earnpopup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  .box {
+    width: 31rem;
+    height: 50rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .headertitle {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      background-color: white;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding-inline: 1.5rem;
+
+      .firstImg {
+        visibility: hidden;
+      }
+
+      img {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      h1 {
+        padding: 1.25rem;
+        padding-inline: 0;
+        font-family: "Source Sans Pro Regular", sans-serif;
+        font-weight: normal !important;
+        color: #013220;
+      }
+    }
+
+    .body {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 3rem;
+
+      label {
+        margin-top: 1.5rem;
+        margin-right: auto;
+        opacity: 0.7;
+        font-weight: 500;
+      }
+
+      .inputContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 0.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 0.8rem 1rem;
+
+        p {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+
+        input {
+          width: 100%;
+          border: none;
+          padding: 0 0.2rem;
+          padding-top: 0.3rem;
+          font-size: 1.2rem;
+          outline: none;
+        }
+
+        .collateralAmount {
+          width: 100%;
+        }
+
+        .dropdown {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          user-select: none;
+          border-radius: 0.2rem;
+          padding: 0.1rem;
+          position: relative;
+
+          p {
+            font-size: 0.9rem;
+            width: 100%;
+            transition: 0.2s ease-in-out;
+          }
+
+          .dropdownData {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateY(-100%);
+            background-color: white;
+            width: 10rem;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            border-radius: 0.2rem;
+            padding: 0.4rem 0;
+            display: none;
+            align-items: flex-start;
+            flex-direction: column;
+
+            p {
+              padding: 0.5rem;
+
+              &:hover {
+                background-color: whitesmoke;
+              }
+            }
+
+            .active {
+              background-color: green;
+              color: white;
+
+              &:hover {
+                background-color: green;
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        margin-top: 1rem;
+        width: 100%;
+        outline: none;
+        border: none;
+        background-color: #013220;
+        border-radius: 5px;
+        padding: 0.6rem;
+        color: white;
+        font-family: "Source Sans Pro Regular", sans-serif;
+        font-size: 1em;
+
+        &:hover {
+          cursor: pointer;
+          background-color: lighten(#013220, 15%);
+          transition: background-color 0.2s;
+        }
+
+        &:active {
+          background-color: #013220;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .earnpopup {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+
+    .box {
+      width: 100% !important;
+      height: 100% !important;
+      border-radius: 0px !important;
+    }
+
+    .headertitle {
+      background-color: darkgreen !important;
+      border-radius: 0 !important;
+      h1 {
+        color: white !important;
+      }
+
+      img {
+        filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(321deg)
+          brightness(110%) contrast(110%);
+      }
+    }
+  }
+}

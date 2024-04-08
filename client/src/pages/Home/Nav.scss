@@ -1,0 +1,394 @@
+.Nav {
+    nav {
+        // position: fixed;
+        // top: 0;
+        // width: 100%;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+        padding: 0.5rem 1rem;
+        background-color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        user-select: none;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo-with-text {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+
+            .logo {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-right: 14px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                    border-radius: 50%;
+                }
+            }
+
+            .nav_text {
+                font-size: 24px;
+                font-weight: 700;
+                color: #013220;
+            }
+        }
+
+        .login-button {
+            cursor: pointer;
+            font-size: .9rem;
+            color: #fff;
+            background-color: #013220;
+            border-radius: 0.5rem;
+            border: none;
+            // width: 100%;
+            padding: 0.8rem 0;
+            font-weight: 700;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                background-color: #000;
+            }
+        }
+
+
+
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+
+
+            .nav-link {
+                margin: 0 1rem;
+                color: #000;
+                font-weight: 400;
+                font-size: 1.2rem;
+                transition: .2s ease-in-out;
+                text-decoration: none;
+                position: relative;
+                padding-bottom: 9px;
+                font-family: Source Sans Pro,sans-serif;
+            }
+
+
+
+        }
+    }
+
+
+}
+
+
+.active {
+    border-bottom: 3px solid #013220;
+    border-radius: 2px;
+
+}
+
+@media only screen and (min-width: 1100px) {
+    .Nav {
+        nav {
+            button {
+                width: 5rem;
+                margin-left: 3rem;
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 1025px) {
+    .Nav{
+        input[type=checkbox]{
+            display: none;
+        }
+        .nav{
+            .nav-links{
+                .social_media{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width:1024px) {
+
+
+    .Nav {
+        .nav {
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            place-content: space-between;
+            padding: 0.5rem 1rem;
+            // padding: 4rem 2rem 2rem;
+            background-color: white;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            user-select: none;
+
+            .nav-header {
+                display: inline;
+
+
+            }
+
+            .nav-btn {
+                display: none;
+            }
+
+            .nav-links {
+                display: inline;
+                float: right;
+                font-size: 18px;
+
+                li:not(:last-child) {
+                    margin-bottom: 1rem;
+                    border-bottom: 2px solid rgba(0, 0, 0, .08);
+                    padding-bottom: 0.5rem;
+                }
+
+
+                a {
+                    display: inline-block;
+                    padding: 13px 10px 13px 10px;
+                    text-decoration: none;
+
+                }
+            }
+
+            #nav-check {
+                display: none;
+            }
+        }
+    }
+
+    .Nav {
+        .nav {
+
+            .nav-btn {
+                display: inline-block;
+                position: absolute;
+                right: 15px;
+                top: 20px;
+
+                label {
+                    display: inline-block;
+                    width: 50px;
+                    height: 50px;
+                    padding: 13px;
+
+                    span {
+                        display: block;
+                        width: 25px;
+                        height: 10px;
+                        border-top: 2px solid #000;
+                    }
+                }
+            }
+
+            .nav-links {
+                background-color: #fff;
+                z-index: 3;
+                border-left: 1px solid rgba(0, 0, 0, .1);
+
+                position: absolute;
+                display: block;
+                width: 0px;
+                height: 0px;
+                transition: all 0.3s ease-in;
+                overflow-y: hidden;
+                top: 93px;
+                right: 0px;
+                z-index: 111;
+
+                a {
+                    display: block;
+                    width: 100%;
+                }
+
+                .login-button {
+                    width: 50%;
+                    margin: 0 auto;
+                    display: block;
+                }
+
+                .social_media {
+                    width: 100%;
+                    display: -ms-grid;
+                    display: grid;
+                    align-items: center;
+                    place-items: center;
+                    -ms-grid-columns: minmax(2.5em, 1fr) [auto-fit];
+                    grid-template-columns: repeat(auto-fit, minmax(2.5em, 1fr));
+                    -ms-grid-rows: 1fr;
+                    grid-template-rows: 1fr;
+                    grid-column-gap: 1em;
+                    grid-row-gap: 1em;
+
+                    .imageContainer {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        background: #f3f3f3;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        transition: .3s ease-in-out;
+
+                        &:hover {
+                            box-shadow: 0 8px 24px rgb(149 157 165 / 20%);
+                        }
+
+                        img {
+                            width: 40%;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+
+            #nav-check:not(:checked)~.nav-links {
+                height: 0px;
+                width: 0px;
+            }
+
+            #nav-check:checked~.nav-links {
+                height: calc(100vh - 50px);
+                overflow-y: auto;
+                width: 50%;
+                padding: 4rem 2rem 2rem;
+            }
+        }
+
+
+    }
+
+    .active{
+        border-bottom: 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 300px) and (max-width : 1024px) {
+    .Nav {
+        nav {
+            .navbar-nav.nav-links {
+                .social_media {}
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+@media (min-width: 576px) {
+
+    .container,
+    .container-sm {
+        max-width: 540px;
+    }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px;
+    }
+
+}

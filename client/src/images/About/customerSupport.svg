@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62" height="61.651" viewBox="0 0 62 61.651">
+  <g id="Group_39" data-name="Group 39" transform="translate(-1 -1)">
+    <path id="Path_73" data-name="Path 73" d="M42,27H32V17" fill="none" stroke="#013220" stroke-miterlimit="10" stroke-width="2"/>
+    <circle id="Ellipse_32" data-name="Ellipse 32" cx="10" cy="10" r="10" transform="translate(22 17)" fill="none" stroke="#013220" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_11" data-name="Line 11" y2="12" transform="translate(32 48)" fill="none" stroke="#013220" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_12" data-name="Line 12" x1="12" y2="14" transform="translate(14 48)" fill="none" stroke="#013220" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_13" data-name="Line 13" x2="12" y2="14" transform="translate(38 48)" fill="none" stroke="#013220" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_74" data-name="Path 74" d="M56,42V7H8V42" fill="none" stroke="#013220" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_14" data-name="Line 14" x1="60" transform="translate(2 48)" fill="none" stroke="#013220" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_15" data-name="Line 15" y1="5" transform="translate(32 2)" fill="none" stroke="#013220" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

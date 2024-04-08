@@ -1,0 +1,214 @@
+.menu {
+  z-index: 5;
+  width: 100%;
+  position: fixed;
+  height: 60vh;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  bottom: 0;
+
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .btnbox {
+      height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      button {
+        position: absolute;
+        bottom: 8px;
+        outline: none;
+        border: none;
+        background-color: green;
+        border-radius: 50%;
+        padding: 0.75rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+
+      li {
+        list-style: none;
+        padding: 0.75rem;
+        padding-inline: 0;
+        width: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+
+        button {
+          outline: none;
+          border: none;
+          background-color: transparent;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .ebct {
+            filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+              brightness(104%) contrast(101%);
+          }
+
+          img {
+            margin-right: 10px;
+          }
+
+          h5 {
+            font-family: "Source Sans Pro Regular", sans-serif;
+            font-weight: bold !important;
+            font-size: 1.45em;
+            color: black;
+            width: 5rem;
+            white-space: nowrap;
+            text-align: start;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .ebct {
+            filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+              brightness(104%) contrast(101%);
+          }
+
+          img {
+            margin-right: 10px;
+          }
+
+          h5 {
+            font-family: "Source Sans Pro Regular", sans-serif;
+            font-weight: bold !important;
+            font-size: 1.25em;
+            color: black;
+            width: 5rem;
+            white-space: nowrap;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footerMenu {
+  display: none;
+  z-index: 5;
+  width: 100%;
+  position: fixed;
+  height: 3.5rem;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  bottom: 0;
+
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-left: 1px;
+
+      li {
+        list-style: none;
+        width: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        button {
+          position: absolute;
+          bottom: -20px;
+          outline: none;
+          border: none;
+          background-color: green;
+          border-radius: 50%;
+          padding: 0.75rem;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .ebct {
+            filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+              brightness(104%) contrast(101%);
+          }
+
+          h5 {
+            font-family: "Source Sans Pro Regular", sans-serif;
+            font-weight: normal !important;
+            color: black;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .active {
+          img {
+            filter: invert(13%) sepia(31%) saturate(2746%) hue-rotate(130deg)
+              brightness(97%) contrast(102%);
+          }
+
+          h5 {
+            color: #013220;
+            font-weight: bold !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footerMenu {
+    display: initial;
+  }
+}

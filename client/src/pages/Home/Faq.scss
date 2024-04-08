@@ -1,0 +1,123 @@
+.Faq{
+    background-color: #fff;
+    .Topinner{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 5rem;
+        .searchContain{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: url('../../images/faqBg.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 50%;
+            padding-top: 8rem;
+            padding-bottom: 5rem;
+            .searchBar{
+                padding: 0.5rem 0.8rem;
+                border-radius: 2rem;
+                border: 1px solid rgba(0,0,0,.1);
+                width: 90%;
+                display: flex;
+                align-items: center;
+                margin: 1rem 0;
+                background: #fff;
+                img{
+                    width: 1.3rem;
+                    opacity: .5;
+                }
+                input{
+                    margin-left: 0.5rem;
+                    border: none;
+                    outline: none;
+                    font-size: 1rem;
+                    padding: 0.1rem;
+                }
+            }
+        }
+
+    }
+    .Tags{
+        margin-top: 5rem;
+        width: 50rem;
+        border-bottom: 1px solid #0132205e;
+        padding-bottom: 5rem;
+        display: -ms-grid;
+        display: grid;
+        align-items: center;
+        place-items: center;
+        -ms-grid-columns: minmax(10em,1fr) [auto-fit];
+        grid-template-columns: repeat(auto-fit,minmax(10em,1fr));
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        .tag{
+            width: 90%;
+            border: 1px solid #013220;
+            padding: 0 0.5rem;
+            border-radius: 0.5rem;
+            transition: .3s ease-in-out;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &:hover{
+                background: #013220;
+                color: #fff;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .Faq{
+        .Tags{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .Faq{
+        .Topinner{
+            .searchContain{
+                padding-top: 10rem;
+                .searchBar{
+                    width: 30rem;
+                }
+            }
+        }
+        .Tags{
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+   .Faq{
+    padding-bottom: 5rem;
+        .Topinner{
+            .searchContain{
+                padding-top: 12rem;
+                padding-bottom: 7rem;
+            }
+        }
+        .Tags{
+            width: 50rem;
+            -ms-grid-columns: minmax(20em,1fr) [auto-fit];
+            grid-template-columns: repeat(auto-fit,minmax(20em,1fr));
+            margin: 0 auto;
+            .tag{
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,272 @@
+.blog {
+    padding: 5rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 1rem;
+        opacity: .8;
+        margin: 1.5rem 0;
+    }
+
+    .tags {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 70%;
+        padding: 1rem;
+        border-top: 1px solid rgba(0, 0, 0, .15);
+        border-bottom: 1px solid rgba(0, 0, 0, .15);
+
+        h2 {
+            color: #013220;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .tagGrid {
+            width: 90%;
+            display: grid;
+            align-items: center;
+            place-items: center;
+            -ms-grid-columns: minmax(10em, 1fr) [auto-fit];
+            grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+            -ms-grid-rows: 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+
+            .tag {
+                display: flex;
+                width: 100%;
+                padding: 0.5rem 0;
+                border-radius: 0.5rem;
+                border: 1px solid #013220;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+                -webkit-user-select: none;
+                user-select: none;
+                height: 35px;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    background-color: #013220;
+
+                    p {
+
+                        color: #fff;
+                    }
+                }
+
+                p {
+                    font-size: .9rem;
+                    color: #013220;
+                }
+            }
+        }
+    }
+}
+
+.posts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+
+    .mainPost {
+        width: 100%;
+
+        .blogPost {
+            cursor: pointer;
+            margin: 4rem 0 1rem;
+            color: #fff;
+            width: 100%;
+            height: 20rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: .3s ease-in-out;
+            border-radius: 0.5rem;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+            &:hover {
+                box-shadow: 0 4px 16px rgb(17 17 26 / 30%), 0 8px 24px rgb(17 17 26 / 30%), 0 16px 56px rgb(17 17 26 / 30%);
+            }
+
+            .titleSection {
+                cursor: pointer;
+                // margin: 1rem 0;
+                color: #fff;
+                width: 100%;
+                height: 20rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: .3s ease-in-out;
+                border-radius: 0.5rem;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                width: 100%;
+                height: 100%;
+                background: #013220;
+                position: relative;
+                border-radius: 0.5rem 0.5rem 0 0;
+
+                h1 {
+                    font-size: 2.2rem;
+                    bottom: 1.5rem;
+                    left: 1.5rem;
+                    position: absolute;
+                    text-align: left;
+                }
+
+
+            }
+        }
+
+        .textSection {
+            width: 100%;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            background: #013220;
+            padding: 1rem;
+            border-radius: 0 0 0.5rem 0.5rem;
+            position: relative;
+        }
+
+        .textSection p {
+            text-align: left;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .subPosts {
+            width: 100%;
+            display: -ms-grid;
+            display: grid;
+            align-items: center;
+            place-items: center;
+            -ms-grid-columns: minmax(12em, 1fr) [auto-fit];
+            grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+            -ms-grid-rows: 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            a{
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .allPosts{
+            width: 100%;
+            display: -ms-grid;
+            display: grid;
+            align-items: center;
+            place-items: center;
+            -ms-grid-columns: minmax(12em,1fr) [auto-fit];
+            grid-template-columns: repeat(auto-fit,minmax(12em,1fr));
+            -ms-grid-rows: 1fr;
+            grid-template-rows: 1fr;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            p{
+                font-size: .8rem;
+            }
+
+            .titleSection{
+                h1{
+                    font-size: 1.1rem;
+                }
+               
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (max-width : 767px) {
+    .posts{
+        .mainPost{
+            .blogPost{
+                .titleSection{
+                    h1{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    } 
+    
+}
+
+@media only screen and (min-width: 600px) {
+    .Blog {
+        padding: 8rem 2rem;
+
+        h1 {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .Blog {
+        .tags {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 70%;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .posts {
+        .mainPost {
+            .blogPost {
+                height: 30rem;
+
+                .titleSection {
+                    h1 {
+                        bottom: 1.5rem;
+                        left: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .blog {
+        p {
+            font-size: 1.1rem;
+        }
+
+        .tags {
+            padding: 3rem 0;
+            width: 50rem;
+        }
+    }
+}

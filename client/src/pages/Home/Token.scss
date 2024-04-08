@@ -1,0 +1,1103 @@
+.Token {
+    background-color: #fff;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+
+        .tokenImg {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+
+        .tokenContent {
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                font-weight: 600;
+                font-size: 1.3rem;
+                margin: 1rem 0;
+            }
+
+            p {
+                font-size: 1rem;
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.Reward {
+    background-color: #fff;
+    width: 100%;
+
+    .rewardEarn {
+        -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+        padding: 2rem 1rem;
+        width: 100%;
+        margin: 0 auto;
+        background: linear-gradient(0deg, #fff, #f3f3f3);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .earnText {
+            h2 {
+                font-weight: 600;
+                font-size: 1.3rem;
+                margin: 1rem 0;
+            }
+
+            p {
+                font-size: 1rem;
+                opacity: .8;
+            }
+
+            button {
+                cursor: pointer;
+                font-size: .9rem;
+                color: #fff;
+                background-color: #013220;
+                border-radius: 0.5rem;
+                border: none;
+                width: 100%;
+                padding: 0.8rem 0;
+                font-weight: 700;
+                transition: .3s ease-in-out;
+                margin: 2rem 0;
+
+                &:hover {
+                    background-color: #000;
+                }
+            }
+        }
+
+        .earnStats {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .statsCard {
+                background-color: #fff;
+                margin: 0.5rem 0;
+                width: 100%;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+                text-align: center;
+
+                img {
+                    width: 3rem;
+                }
+
+                .heading {
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    margin: 0.8rem 0;
+                    color: #013220;
+                }
+
+                .text {
+                    font-size: 1rem;
+                    opacity: .8;
+                }
+            }
+
+
+        }
+    }
+}
+
+.karma {
+    background-color: #fff;
+
+    .inner {
+        -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+        padding: 2rem 1rem;
+        width: 100%;
+        background: #fff;
+        background: linear-gradient(0deg, #fff, #f3f3f3);
+        padding-top: 5rem;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            margin-top: 5rem;
+        }
+
+        .TableKarma {
+            margin-top: 8rem;
+
+            h4 {
+                margin: 2rem 0;
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: #013220;
+            }
+
+            .tableContain {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                padding: 0 3rem;
+                background: #fff;
+                border-radius: 1rem;
+                border: 4px solid #e6e9f4;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                table {
+                    width: 100%;
+
+                    thead {
+                        th {
+                            padding: 20px 0;
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            &:hover {
+                                box-shadow: 0 8px 24px rgb(149 157 165 / 20%);
+                            }
+
+                            td {
+                                padding: 20px 0;
+                                border-top: 1px solid #e6e9f4;
+                                cursor: pointer;
+                                transition: .5s ease-in-out;
+
+                                .table-flex {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .currenc-logo {
+                                        margin-left: 0.5rem;
+                                        width: 3rem;
+                                        height: 3rem;
+                                        margin-right: 1rem;
+                                        border-radius: 50%;
+
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 50%;
+                                            object-fit: cover;
+                                        }
+                                    }
+
+                                    .name {
+                                        opacity: .8;
+                                        color: #013220;
+                                        font-size: 1.2rem;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                            .level{
+                                font-size: 1rem;
+                                opacity: .8;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.howTo{
+    background-color: #fff;
+    .inner{
+        -webkit-clip-path: polygon(0 3%,100% 0,100% 100%,0 100%);
+        clip-path: polygon(0 3%,100% 0,100% 100%,0 100%);
+        padding: 2rem 1rem;
+        width: 100%;
+        background: linear-gradient(0deg,#fff,#f3f3f3);
+        padding-top: 5rem;
+        text-align: center;
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .innerText{
+            font-size: 1rem;
+            opacity: .8;
+        }
+      
+        .content{
+            width: 95%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+            .token-img{
+                width: 40%;
+                margin: 2rem 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .list{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .listItem{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 1rem 0;
+                    h5{
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        margin: 0.7rem 0;
+                        margin: 0.8rem 0;
+                        color: #013220;
+                    }
+                    p{
+                        font-size: 1rem;
+                        opacity: .8;
+                    }
+                    .token-digit{
+                        background-color: #013220;
+                        border-radius: 50%;
+                        height: 2.3rem;
+                        width: 2.3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 0.5rem;
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                    }
+                    .tokenText{
+                        width: 90%;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.EBCT-stats{
+    background-color: #fff;
+    .inner{
+        -webkit-clip-path: polygon(0 3%,100% 0,100% 100%,0 100%);
+        clip-path: polygon(0 3%,100% 0,100% 100%,0 100%);
+        padding: 2rem 1rem;
+        width: 100%;
+        background: linear-gradient(0deg,#fff,#f3f3f3);
+        padding-top: 5rem;
+        text-align: center;
+        h2{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .token-content{
+            .token-data{
+                .tokenData-card{
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 1rem 0 0.5rem;
+                    border-radius: 0.4rem;
+                    margin: 1.5rem 0;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    place-content: space-between;
+                    box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%);
+                    h6{
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        margin: 0.8rem 0;
+                        color: #013220;
+                        margin-bottom: 2rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                        opacity: .8;
+                        padding-top: 0.5rem;
+                        border-top: 2px solid #01322049;
+                        width: 100%;
+                        font-size: .9rem;
+                    }
+                }
+            }
+            .tokenContract{
+                width: 100%;
+                background-color: #fff;
+                padding: 1rem 0 0.5rem;
+                border-radius: 0.4rem;
+                margin: 1.5rem 0;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                place-content: space-between;
+                box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%);
+                h5{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    margin: 0.8rem 0;
+                    color: #013220;
+                    margin-bottom: 2rem;
+                }
+                p{
+                    padding-top: 0.5rem;
+                    border-top: 2px solid #01322049;
+                    width: 100%;
+                    font-size: .9rem;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width : 767px) {
+    .karma{
+        .inner{
+            .TableKarma{
+                overflow-x: scroll;
+                white-space: nowrap;
+                .tableContain{
+                    overflow-x: scroll;
+                    align-items: flex-start;
+                }
+            }
+        }
+    } 
+
+    .EBCT-stats {
+        .inner {
+            .token-content{
+                .tokenContract {
+                    h5{
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+     
+    
+}
+
+@media only screen and (min-width: 600px) {
+    .Token {
+        .inner {
+            padding: 2rem;
+
+            .tokenImg {
+                width: 80%;
+            }
+
+            .tokenContent {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    .Reward {
+        .rewardEarn {
+            padding: 2rem;
+
+            .earnText {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                }
+
+                button {
+                    font-size: 1rem;
+                }
+            }
+
+            .earnStats {
+                .statsCard {
+                    img {
+                        width: 4rem;
+                    }
+
+                    .heading {
+                        font-size: 1.3rem;
+                    }
+
+                    .text {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .karma {
+        .inner {
+            padding: 2rem;
+
+            h2 {
+                font-size: 3rem;
+            }
+            .TableKarma{
+                .tableContain{
+                    table{
+                        thead{
+                            
+                        }
+
+                        tbody{
+                            tr{
+                                .level{
+                                    font-size: 1.1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .howTo{
+        .inner{
+            padding: 2rem;
+            h2{
+                font-size: 3rem;
+            }
+            .innerText{
+                font-size: 1.1rem;
+            }
+            .content{
+                .token-img{
+                    width: 80%;
+                }
+                .list{
+                    .listItem{
+                        h5{
+                            font-size: 1.3rem;
+                        }
+                        p{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .EBCT-stats{
+        .inner{
+            padding: 2rem;
+            h2{
+                font-size: 3rem;
+            }
+            .token-content{
+                .token-data{
+                    .tokenData-card{
+                        h6{
+                            font-size: 1.3rem;
+                        }
+                        p{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+                .tokenContract{
+                    h6{
+                        font-size: 1.4rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+    .Reward {
+        .rewardEarn {
+            -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    .karma {
+        .inner {
+            -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+            .TableKarma{
+                .tableContain{
+                    table{
+                        thead{
+                            
+                        }
+
+                        tbody{
+                            tr{
+                                .level{
+                                    font-size: 1.3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .howTo{
+        .inner{
+            -webkit-clip-path: polygon(0 5%,100% 0,100% 100%,0 100%);
+            clip-path: polygon(0 5%,100% 0,100% 100%,0 100%);
+          
+        }
+    }
+
+    .EBCT-stats{
+        .inner{
+            -webkit-clip-path: polygon(0 5%,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 5%,100% 0,100% 100%,0 100%);
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .Token {
+        .inner {
+            flex-direction: row-reverse;
+            place-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            margin-top: 5rem;
+            padding: 3rem 2rem;
+
+            .tokenImg {
+                width: 50%;
+            }
+
+            .tokenContent {
+                margin-top: 4rem;
+                text-align: left;
+
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                h2 {
+                    margin-top: 1rem;
+                    margin-bottom: 3rem;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .Reward {
+        .rewardEarn {
+            padding: 3rem 2rem;
+            flex-direction: row;
+            place-content: space-between;
+
+            .earnText {
+                width: 48%;
+                text-align: left;
+
+                p {
+                    font-size: 1.3rem;
+                    margin: 3rem 0;
+                }
+
+                button {
+                    margin: 0;
+                    width: 50%;
+                }
+            }
+
+            .earnStats {
+                width: 48%;
+
+                .statsCard {
+                    .text {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .karma {
+        .inner {
+            padding: 3rem 2rem;
+
+            h2 {
+                font-size: 2.5rem;
+            }
+            .TableKarma{
+                .tableContain{
+                    table{
+                        thead{
+                            
+                        }
+
+                        tbody{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .howTo{
+        .inner{
+            h2{
+                font-size: 2.5rem;
+            }
+            .innerText{
+                font-size: 1.3rem;
+            }
+            .content{
+                flex-direction: row-reverse;
+                place-content: space-between;
+                margin-top: 4rem;
+                .token-img{
+                    width: 35%;
+                }
+                .list{
+                    width: 55%;
+                    .listItem{
+                        flex-direction: row;
+                        text-align: left;
+                        margin-right: auto;
+                        align-items: center;
+                        p{
+                            font-size: 1.3rem;
+                        }
+                        .token-digit{
+                            margin-bottom: 0;
+                            margin-top: -0.3rem;
+                            width: 2.4rem;
+                            height: 2.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .EBCT-stats{
+        .inner{
+            padding: 3rem 2rem;
+            h2{
+                font-size: 2.5rem;
+            }
+            .token-content{
+                .token-data{
+                    display: flex;
+                    align-items: center;
+                    place-content: space-between;
+                    margin: 1.5rem 0;
+                    .tokenData-card{
+                        margin: 0 0.5rem;
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .Token {
+        .inner {
+            padding: 4rem 5%;
+        }
+    }
+
+    .Reward {
+        .rewardEarn {
+            padding: 4rem 10%;
+        }
+    }
+
+    .karma {
+        .inner {
+            padding: 4rem 10%;
+            .TableKarma{
+                .tableContain{
+                    table{
+                        thead{
+                            
+                        }
+
+                        tbody{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .howTo{
+        .inner{
+            padding: 4rem 10%;
+        }
+    }
+
+    .EBCT-stats{
+        .inner{
+            padding: 4rem 10%;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1300px) {
+    .Token {
+        .inner {
+            padding: 4rem 8%;
+
+            .tokenContent {
+                h1 {
+                    font-size: 3.2rem;
+                }
+
+                h2 {
+                    font-size: 2.2rem;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .Reward {
+        .rewardEarn {
+            padding: 4rem 15%;
+            -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+
+            .earnText {
+                h2 {
+                    font-size: 2.2rem;
+                }
+
+                button {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .earnStats {
+                .statsCard {
+                    .heading {
+                        font-size: 1.35rem;
+                    }
+
+                    .text {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .karma {
+        .inner {
+            padding: 4rem 15%;
+            -webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+
+            h2 {
+                font-size: 3.2rem;
+            }
+            .TableKarma{
+                .tableContain{
+                    table{
+                        thead{
+                            
+                        }
+
+                        tbody{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .howTo{
+        .inner{
+            padding: 4rem 15%;
+            -webkit-clip-path: polygon(0 7%,100% 0,100% 100%,0 100%);
+            clip-path: polygon(0 7%,100% 0,100% 100%,0 100%);
+            h2{
+                font-size: 3.2rem;
+            }
+            .content{
+                .list{
+                    .listItem{
+                        h5{
+                            font-size: 1.35rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .EBCT-stats{
+        .inner{
+            padding: 4rem 15%;
+            -webkit-clip-path: polygon(0 7%,100% 0,100% 100%,0 100%);
+            clip-path: polygon(0 7%,100% 0,100% 100%,0 100%);
+            h2{
+                font-size: 3.2rem;
+            }
+            .token-content{
+                .token-data{
+                    .tokenData-card{
+                        h6{
+                            font-size: 1.35rem;
+                        }
+                        p{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+                .tokenContract{
+                    h6{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+    .Token {
+        .inner {
+            padding: 4rem 10%;
+
+            .tokenContent {
+                margin-top: 8rem;
+
+                h1 {
+                    font-size: 3.5rem;
+                }
+
+                h2 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .Reward {
+        .rewardEarn {
+            padding: 4rem 20%;
+
+            .earnText {
+                width: 40%;
+
+                h2 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+
+                button {
+                    font-size: 1.15rem;
+                }
+            }
+
+            .earnStats {
+                .statsCard {
+                    .heading {
+                        font-size: 1.4rem;
+                    }
+
+                    .text {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .karma {
+        .inner {
+            padding: 4rem 20%;
+
+            h2 {
+                font-size: 3.5rem;
+            }
+            .TableKarma{
+                .tableContain{
+                    table{
+                        thead{
+                            
+                        }
+
+                        tbody{
+                            tr{
+                                .level{
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .howTo{
+        .inner{
+            padding: 4rem 20%;
+            h2{
+                font-size: 3.5rem;
+            }
+            .innerText{
+                font-size: 1.5rem;
+            }
+            .content{
+                .token-img{
+                    width: 20rem;
+                }
+                .list{
+                    .listItem{
+                        margin: 2.5rem auto 2.5rem 0;
+                        h5{
+                            font-size: 1.7rem;
+                        }
+                        p{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .EBCT-stats{
+        .inner{
+            padding: 4rem 20%;
+            h2{
+                font-size: 3.5rem;
+            }
+            .token-content{
+                .token-data{
+                    .tokenData-card{
+                        h6{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+            .tokenContract{
+                h6{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width : 1600px) {
+    .Reward {
+        .rewardEarn {
+            -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        }
+
+    }
+
+    .karma {
+        .inner {
+            -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        }
+        .TableKarma{
+            .tableContain{
+                table{
+                    thead{
+                        
+                    }
+
+                    tbody{
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .howTo{
+        .inner{
+            -webkit-clip-path: polygon(0 10%,100% 0,100% 100%,0 100%);
+            clip-path: polygon(0 10%,100% 0,100% 100%,0 100%);
+        }
+    }
+
+    .EBCT-stats{
+        .inner{
+            -webkit-clip-path: polygon(0 10%,100% 0,100% 100%,0 100%);
+            clip-path: polygon(0 10%,100% 0,100% 100%,0 100%);
+        }
+    }
+
+}

@@ -1,0 +1,184 @@
+.borrow {
+  width: calc(100% - 16rem);
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+
+  .tokenBoxesRow {
+    padding-top: 1rem;
+    display: -ms-grid;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    place-items: start;
+    // -ms-grid-columns: (minmax(18em, 1fr)) [auto-fit];
+    // grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    // -ms-grid-rows: 1fr;
+    // grid-template-rows: 1fr;
+    // grid-column-gap: 15px;
+    // grid-row-gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .tokenbox {
+    text-decoration: none !important;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 21.5rem;
+    height: 14.5rem;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    .header {
+      display: flex;
+      align-items: center;
+      height: 25%;
+
+      img {
+        margin-right: 5px;
+      }
+
+      h3 {
+        font-family: "Source Sans Pro Regular", sans-serif;
+        font-weight: normal !important;
+        margin: 0;
+      }
+    }
+
+    .middle {
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      .midleft {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: "Source Sans Pro Regular", sans-serif;
+      }
+
+      .midright {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        font-family: "Source Sans Pro Regular", sans-serif;
+        justify-content: flex-end;
+        .green {
+          color: darkgreen;
+        }
+      }
+    }
+
+    .bottom {
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .botleft {
+        display: flex;
+        flex-direction: column;
+        font-family: "Source Sans Pro Regular", sans-serif;
+
+        h5 {
+          margin-bottom: 5px;
+        }
+      }
+
+      .botright {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        button {
+          font-family: "Source Sans Pro Semi-Bold", sans-serif;
+          font-weight: bolder !important;
+          color: darkgreen;
+          outline: none;
+          border: 1px solid darkgreen;
+          padding: 0.5rem;
+          border-radius: 5px;
+          background: transparent;
+
+          &:hover {
+            cursor: pointer;
+            background-color: darkgreen;
+            color: white;
+            transition: background-color 0.2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .earn {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .tokenBoxesRow {
+    padding: 1rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .borrow {
+    width: 100%;
+  }
+
+  .mainheader{
+    .mRow {
+      .mRight{
+        button{
+          font-size: 10px;
+        }
+
+      }
+
+    }
+
+  }
+  .borrow{
+    .tokenbox{
+      .bottom{
+        .botright{
+          button{
+            font-size: 12px;
+          }
+
+        }
+
+      }
+
+    }
+      
+  } 
+  
+}
+
+@media only screen and (max-width: 750px) {
+  .earn {
+    .desktop {
+      display: none !important;
+    }
+  }
+
+  .earn {
+    padding: 0;
+  }
+}
+
+

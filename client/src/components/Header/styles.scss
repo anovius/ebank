@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "Source Sans Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/SSPro/SourceSansPro-Regular.ttf");
+}
+
+.mainheader {
+  padding: 1rem;
+  padding-inline: 1.75rem;
+  background-color: #013220;
+  width: 100%;
+  border-radius: 10px;
+
+  .mRow:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  .mRow:last-child {
+    align-items: flex-end;
+  }
+
+  .mRow:first-child {
+    align-items: center !important;
+  }
+
+  .mRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .mRight {
+      display: flex;
+      align-items: center;
+
+      button {
+        outline: none;
+        border: none;
+        padding: 0.5rem;
+        padding-inline: 1.5rem;
+        background-color: lighten(#013220, 15%);
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+
+        img {
+          margin-right: 10px;
+          filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+            brightness(104%) contrast(101%);
+        }
+
+        h3 {
+          font-family: "Source Sans Pro Regular", sans-serif;
+          font-weight: normal !important;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: lighten(#013220, 25%);
+          transition: background-color 0.25s;
+        }
+
+        &:active {
+          background-color: lighten(#013220, 15%);
+        }
+      }
+    }
+
+    .mLeft {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        display: flex;
+        align-items: center;
+        color: white;
+        position: relative;
+
+        .mEye {
+          filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+            brightness(104%) contrast(101%);
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .mTooltip {
+          z-index: 100;
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          width: 225%;
+          background-color: white;
+          color: black;
+          border-radius: 5px;
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+          top: 100%;
+          left: 0;
+          padding: 1rem;
+          font-family: "Source Sans Pro Regular", sans-serif;
+          font-size: 0.9em;
+          line-height: 150%;
+        }
+
+        .mInfo:hover ~ .mTooltip {
+          visibility: visible;
+          opacity: 1;
+          transition: opacity 0.5s;
+        }
+
+        img {
+          margin-left: 5px;
+          filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+            brightness(104%) contrast(101%);
+        }
+      }
+    }
+
+    .mTitle {
+      display: flex;
+      align-items: center;
+      color: white;
+
+      img {
+        margin-right: 10px;
+        filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+          brightness(104%) contrast(101%);
+      }
+
+      h1 {
+        font-family: "Source Sans Pro Regular", sans-serif;
+        font-weight: normal !important;
+      }
+    }
+
+    .mInfo {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .rtwo {
+        display: flex;
+        align-items: center;
+      }
+
+      .rmobile {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        .menubtn {
+          position: relative;
+          filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+            brightness(104%) contrast(101%);
+          z-index: 11;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .mOutside {
+        margin-right: 20px;
+        filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+          brightness(104%) contrast(101%);
+      }
+
+      .level {
+        filter: none;
+      }
+
+      .notificationdropdown {
+        z-index: 3;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        width: 125%;
+        height: 25rem;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+        top: 100%;
+        left: -50%;
+        font-family: "Source Sans Pro Regular", sans-serif;
+        font-size: 0.9em;
+        line-height: 150%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: hidden;
+
+        h3 {
+          padding: 0.5rem;
+          padding-inline: 1rem;
+          width: 100%;
+          text-align: center;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: normal !important;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        span {
+          width: 100%;
+          padding: 0.75rem;
+          padding-inline: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        }
+      }
+
+      .mBell:hover ~ .notificationdropdown {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.25s;
+      }
+
+      .mMenu {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .dropicon {
+          filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(170deg)
+            brightness(104%) contrast(101%);
+        }
+
+        .mColumn {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          font-family: "Source Sans Pro Regular", sans-serif;
+          margin-right: 5px;
+
+          h3 {
+            font-weight: normal !important;
+            color: white;
+          }
+
+          h4 {
+            font-weight: normal !important;
+            color: whitesmoke;
+            opacity: 0.5;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        .mDropdown {
+          z-index: 2;
+          position: absolute;
+          background-color: white;
+          border-radius: 5px;
+          width: 100%;
+          top: 100%;
+          padding: 0.5rem;
+          padding-inline: 0;
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+
+          ul {
+            li:not(:last-child) {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+            }
+            li {
+              padding: 0.75rem;
+              padding-inline: 1rem;
+              list-style: none;
+              display: flex;
+              align-items: center;
+
+              &:hover {
+                background-color: rgb(230, 230, 230);
+              }
+
+              a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                img {
+                  margin-right: 10px;
+                }
+
+                h3 {
+                  font-family: "Source Sans Pro Regular", sans-serif;
+                  color: black;
+                  font-weight: normal !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .rtwo {
+    display: none !important;
+  }
+
+  .rmobile {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .mainheader {
+    padding-bottom: 1.5rem;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mRow:last-child {
+    flex-direction: column;
+    align-items: flex-start !important;
+
+    .mRight {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 5px;
+
+      button {
+        margin: 0;
+        width: 47.5%;
+        justify-content: center;
+      }
+    }
+  }
+
+  .without {
+    flex-direction: row !important;
+    align-items: flex-end !important;
+  }
+
+  .mTitle {
+    img {
+      width: 25px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+    }
+  }
+}

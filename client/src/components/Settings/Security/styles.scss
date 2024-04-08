@@ -1,0 +1,428 @@
+.modalBox {
+  background-color: white;
+  width: 30rem;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+
+  .top {
+    padding: 1rem;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: green;
+    }
+
+    svg {
+      cursor: pointer;
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .body {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      text-align: center;
+      opacity: 0.8;
+    }
+
+    button {
+      margin: 1rem 0;
+      width: fit-content;
+      padding: 0.6rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      border-radius: 0.4rem;
+      border: none;
+      background-color: green;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: darken(green, 5%);
+      }
+    }
+  }
+}
+
+.modalBoxTwoFactor {
+  width: 45rem;
+  .body {
+    .react-code-input {
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    }
+
+    .alert {
+      p {
+        font-weight: normal;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+      }
+    }
+
+    h4 {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      opacity: 0.8;
+    }
+
+    .copyButton {
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+
+    .confirmButton {
+      margin-top: 2rem;
+      width: 100%;
+    }
+  }
+}
+
+.security {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: (minmax(20em, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+  margin-left: 1rem;
+  padding-bottom: 5rem;
+
+  .box {
+    border-radius: 0.4rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    .react-code-input {
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    }
+
+    .title {
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      opacity: 0.8;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .body {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 1rem 2rem;
+
+      .twoFactorCode {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h4 {
+          margin-bottom: 0.3rem;
+          font-size: 0.9rem;
+          opacity: 0.7;
+        }
+      }
+
+      button {
+        margin: 1rem 0;
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+        border-radius: 0.4rem;
+        border: none;
+        background-color: green;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        margin-bottom: 1rem;
+
+        &:hover {
+          background-color: darken(green, 5%);
+        }
+      }
+
+      .inputContainer {
+        width: 100%;
+        margin: 0.5rem 0;
+
+        label {
+          font-weight: 600;
+          font-size: 0.9rem;
+          opacity: 0.9;
+          user-select: none;
+        }
+
+        .inputBox {
+          width: 100%;
+          border: 1px solid green;
+          display: flex;
+          align-items: center;
+          padding: 0.6rem;
+          border-radius: 0.3rem;
+          margin-top: 0.5rem;
+          transition: 0.2s ease-in-out;
+
+          svg {
+            width: 1.1rem;
+            height: 1.1rem;
+            color: rgba(0, 83, 0, 0.8);
+          }
+
+          input {
+            width: 100%;
+            margin-left: 0.5rem;
+            outline: none;
+            background-color: white;
+            border: none;
+            font-size: 0.9rem;
+            padding: 0.2rem;
+            color: rgba(0, 0, 0, 0.7);
+          }
+        }
+      }
+    }
+  }
+
+  .closeAcc {
+    height: 100%;
+    .body {
+      padding: 1rem 4rem;
+      place-content: space-evenly;
+      height: 100%;
+
+      p {
+        font-size: 0.9rem;
+        opacity: 0.8;
+        text-align: center;
+        margin: 1rem 0;
+      }
+
+      button {
+        width: fit-content;
+        padding: 0.5rem;
+        background-color: transparent;
+        border: 1px solid red;
+        color: red;
+        opacity: 0.7;
+
+        &:hover {
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .twoFactorAuth {
+    .body {
+      text-align: center;
+      .reccomended {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 3rem 0;
+
+        h4 {
+          color: white;
+          font-size: 0.7rem;
+          padding: 0.2rem 1rem;
+          background-color: darkgreen;
+          border-radius: 0.5rem;
+        }
+
+        p {
+          text-align: center;
+          font-size: 0.9rem;
+          opacity: 0.6;
+          margin-top: 0.5rem;
+        }
+      }
+
+      p {
+        opacity: 0.8;
+      }
+
+      h3 {
+        margin: 3rem 0;
+        font-size: 1.1rem;
+        color: green;
+        font-weight: normal;
+      }
+
+      .buttonBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 0;
+        border-radius: 0.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+
+        .react-code-input {
+          /* Chrome, Safari, Edge, Opera */
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          /* Firefox */
+          input[type="number"] {
+            -moz-appearance: textfield;
+          }
+        }
+
+        .alert {
+          width: 80%;
+        }
+
+        button {
+          width: fit-content;
+          padding: 0.6rem;
+        }
+
+        .disableBtn {
+          background-color: white;
+          color: green;
+          border: 1.5px solid green;
+
+          &:hover {
+            background-color: green;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .left,
+  .right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    place-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .security {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .modalBoxTwoFactor {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .modalBoxTwoFactor {
+    .body {
+      .alert {
+        p {
+          font-size: 0.8rem;
+        }
+      }
+
+      h4 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .modalBox {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .modalBoxTwoFactor {
+    .body {
+      .alert {
+        p {
+          font-size: 0.7rem;
+        }
+      }
+
+      h4 {
+        text-align: center;
+        inline-size: 15rem;
+        overflow-wrap: break-word;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .security {
+    -ms-grid-columns: (minmax(12em, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  }
+}

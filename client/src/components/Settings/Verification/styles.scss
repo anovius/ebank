@@ -1,0 +1,233 @@
+.verification {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: (minmax(20em, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+  margin-left: 1rem;
+  padding-bottom: 5rem;
+
+  .box {
+    border-radius: 0.4rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      opacity: 0.8;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    place-content: space-between;
+    .kycLevel {
+      height: 100%;
+      .title {
+        color: green;
+      }
+
+      .progress {
+        position: relative;
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+
+        .line {
+          z-index: 0;
+          position: absolute;
+          left: 0;
+          top: 0.5rem;
+          height: 1.5px;
+          width: 100%;
+          background-color: green;
+        }
+
+        .circles {
+          z-index: 0;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          place-content: space-between;
+          .circle {
+            width: 1.4rem;
+            height: 1.4rem;
+            border: 1px solid green;
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+              color: green;
+              font-size: 0.8rem;
+              font-weight: 600;
+            }
+          }
+
+          .completed {
+            background-color: green;
+          }
+        }
+
+        .labels {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          place-content: space-between;
+          p {
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: green;
+        border: 1px solid green;
+        border-radius: 0.4rem;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        margin-bottom: 1rem;
+
+        &:hover {
+          background-color: green;
+          color: white;
+        }
+      }
+    }
+
+    .withdrawalLimits {
+      margin-top: 0.5rem;
+      .header {
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        p {
+          font-size: 0.8rem;
+          width: 8rem;
+          text-align: center;
+        }
+
+        .start {
+          text-align: left;
+        }
+
+        .end {
+          text-align: right;
+        }
+      }
+
+      .rows {
+        width: 100%;
+        .row {
+          display: flex;
+          align-items: center;
+          place-content: space-between;
+          width: 100%;
+          padding: 1rem;
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+          p {
+            width: 8rem;
+            text-align: center;
+            font-size: 1rem;
+          }
+
+          .start {
+            text-align: left;
+          }
+
+          .end {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    height: 100%;
+    width: 100%;
+    .importantNote {
+      height: 100%;
+
+      .title {
+        opacity: 0.6;
+      }
+
+      .text {
+        width: 80%;
+        margin: 1rem 0;
+        font-size: 0.9rem;
+        opacity: 0.7;
+        text-align: center;
+
+        a {
+          color: green;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .verification {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .verification {
+    -ms-grid-columns: (minmax(12em, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    .left {
+      .withdrawalLimits {
+        .header {
+          p {
+            font-size: 0.7rem;
+          }
+        }
+
+        .rows .row {
+          p {
+            font-size: 0.68rem;
+          }
+        }
+      }
+    }
+  }
+}

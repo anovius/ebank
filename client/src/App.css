@@ -1,0 +1,241 @@
+#root {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper2 {
+  width: 100%;
+  display: block;
+}
+
+.admin-dashboard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.admin-dashboard table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.admin-dashboard table tbody td {
+  border-bottom: 1px solid rgb(99, 99, 99);
+  text-align: center;
+  padding: 10px;
+}
+
+.truncate {
+  max-width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin-dashboard .btn {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #333;
+  margin: 3px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+}
+
+.admin-dashboard .btn-danger {
+  background-color: #bd2121;
+}
+
+.admin-dashboard .btn-success {
+  background-color: #298b29;
+}
+
+.admin-dashboard .btn-primary {
+  background-color: #3737a1;
+}
+
+.viewImage {
+  color: rgb(46, 46, 46);
+  cursor: pointer;
+}
+
+.viewImageDisabled {
+  color: rgb(173, 173, 173);
+  cursor: disabled;
+  pointer-events: none;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+.addAsset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.modal-main .addAsset-modal {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.modal-main-lg .addAsset-modal {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.addAsset-modal label {
+  font-size: 14px;
+  color: #333;
+}
+
+.addAsset-modal input,
+.addAsset input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.addAsset-modal select {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.addAsset-modal textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 16px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.addAsset-modal .inputFile {
+}
+
+.addAsset-modal .btn-primary {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #333;
+  margin: 3px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  background-color: #298b29;
+  width: 100%;
+  height: 30px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.clipboardPointer {
+  cursor: pointer;
+}
+
+.teamProfileImage {
+  border-radius: 50%;
+}
+
+.admin-dashboard table th {
+  text-align: center !important;
+}
+
+.static-container {
+  padding: 20px 100px;
+  /* width: 1350px; */
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.static-container h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.static-container h1 {
+  font-style: 3rem;
+}
+.static-container h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.static-container p {
+  font-size: 20px;
+}
+.static-container ul {
+  padding-left: 25px;
+}
+.static-container li {
+  font-size: 20px;
+}
+.static-container h4 {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+.static-container .choose {
+  margin-top: 20px;
+}
+.static-container .first-para {
+  margin-top: 20px;
+}
+.static-container .bold-heading {
+  margin-top: 15px;
+}
+.static-container .privacy-list {
+  margin-top: 20px;
+}
+.static-container .implement {
+  margin-top: 15px;
+}
+
+
+.table-responsive{
+  height: 18rem;
+  overflow-y: auto;
+  margin-bottom: 40px;
+}
